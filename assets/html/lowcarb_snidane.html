@@ -28,67 +28,68 @@
         </div>
             
         <div class="row">
-        <div class="sidenav" id="sidenav">
-            <div class="seznam">
-                <h2>&#9776; Seznam jídel</h2>
-                <input type="text" id="mySearch" onkeyup="SidebarSearch()" placeholder="Najdi jídlo">            
+            <div class="sidenav" id="sidenav">
+                <div class="seznam">
+                    <h2>&#9776; Seznam jídel</h2>
+                    <input type="text" id="mySearch" onkeyup="SidebarSearch()" placeholder="Najdi jídlo">            
+                </div>
+                <ul id="myMenu">
+                </ul> 
             </div>
-            <ul id="myMenu">
-            </ul> 
-        </div>
 
-        <div class="obsah">
-            <div class="tlacitka">
+            <div class="obsah">
+                <div class="tlacitka">
 
-                <!-- GENEROVÁNÍ JÍDLA -->
-                <div class="generuj">
-                    <button type="button" class="button" id="generuj" onclick="vypisJidloARecept(); schovRecept();" title="Vygeneruje náhodně vybrané jídlo">Generuj jídlo</button>
+                    <!-- GENEROVÁNÍ JÍDLA -->
+                    <div class="generuj">
+                        <button type="button" class="button" id="generuj" onclick="vypisJidloARecept(); schovRecept();" title="Vygeneruje náhodně vybrané jídlo">Generuj jídlo</button>
+                    </div>
+
+                    <!-- TLAČÍTKO NA RESET SEZNAMU -->
+                    <div class="reset">
+                        <button type="button" class="button" id="reset" style="display: none" onclick="location.reload()" >Reset seznamu</button>
+                    </div>
                 </div>
 
-                <!-- TLAČÍTKO NA RESET SEZNAMU -->
-                <div class="reset">
-                    <button type="button" class="button" id="reset" style="display: none" onclick="location.reload()" >Reset seznamu</button>
+                <h2 id="nazev"></h2><!-- místo vypsání jídla -->
+
+                <div class="obrazek">
+                    <p id="obrazek"></p> <!-- printne obrázek receptu -->
+                </div>
+
+                <div class="hodnoty" style="display: none" id="hodnoty">
+                    <table>
+                        <tr>
+                            <th>&#9889; Energetická hodnota</th>
+                            <th>&#129482; Sacharidy</th>
+                            <th>&#9832; Tuky</th>
+                            <th>&#129370; Bílkoviny</th>
+                        </tr>
+                        <tr>
+                            <td id="energie"></td>
+                            <td id="sacharidy"></td>
+                            <td id="tuky"></td>
+                            <td id="bilkoviny"></td>
+                        </tr>
+                    </table>  
+                    
+                <hr width="100%" size="1" color="black" noshade>
+
+                    <div class="receptLow" id="recept">
+                        <p id="ingredience"></p> <!-- místo vypsání ingrediencí -->
+                        <p id="postup"></p> <!-- místo vypsání receptu -->
+                    </div> 
                 </div>
             </div>
-
-            <h2 id="nazev"></h2><!-- místo vypsání jídla -->
-
-            <div class="obrazek">
-                <p id="obrazek"></p> <!-- printne obrázek receptu -->
-            </div>
-
-            <div class="hodnoty" style="display: none" id="hodnoty">
-                <table>
-                    <tr>
-                        <th>&#9889; Energetická hodnota</th>
-                        <th>&#129482; Sacharidy</th>
-                        <th>&#9832; Tuky</th>
-                        <th>&#129370; Bílkoviny</th>
-                    </tr>
-                    <tr>
-                        <td id="energie"></td>
-                        <td id="sacharidy"></td>
-                        <td id="tuky"></td>
-                        <td id="bilkoviny"></td>
-                    </tr>
-                </table>  
-                
-            <hr width="100%" size="1" color="black" noshade>
-
-                <div class="receptLow" id="recept">
-                    <p id="ingredience"></p> <!-- místo vypsání ingrediencí -->
-                    <p id="postup"></p> <!-- místo vypsání receptu -->
-                </div> 
-            </div>
         </div>
-    </div>
-    
-    <footer>
-        &copy; 2022 <b>MarWen</b>
-    </footer>
         
-    <script type="text/javascript" src="../js/script.js" defer></script>
-    <script type="text/javascript" src="../js/lowcarb_snidane.js" defer></script>    
+        <footer>
+            &copy; 2022 <b><a href="https://mar6wen8.github.io/MarWen">WarWen</a></b>
+            <a style="margin:0" href="mailto:mar6wen8@gmail.com" target="_blank" aria-label="e-mail"><i class="fa fa-envelope"></i></a>
+        </footer>
+            
+        <script type="text/javascript" src="../js/script.js" defer></script>
+        <script type="text/javascript" src="../js/lowcarb_snidane.js" defer></script>    
 
     </body>
 
