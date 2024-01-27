@@ -1,0 +1,69 @@
+﻿<html>
+    <head>
+        <title>Večeře</title>
+        
+        <link rel="icon" type="image/x-icon" href="0pics/jidloicon.png">
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- knihovna obrázků a písma -->  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="../css/style.css"> 
+    
+    </head>
+    
+    <body onload="nactiJidla()">
+    
+        <header>
+            <a href="../../index.html"><h1>Co uvaříme?</h1></a>
+        </header>
+
+        <div class="row">
+            <div class="sidenav" id="sidenav">
+                <div class="seznam">
+                    <h2>&#9776; Seznam jídel</h2>
+                    <input type="text" id="mySearch" onkeyup="SidebarSearch()" placeholder="Najdi večeři">            
+                </div>
+                <ul id="myMenu">
+                </ul> 
+            </div>
+
+             <div class="obsah">
+                <div class="tlacitka">
+
+                    <!-- GENEROVÁNÍ JÍDLA -->
+                    <div class="generuj">
+                        <button type="button" class="button" id="generuj" onclick="vypisJidloARecept(); schovRecept();" title="Vygeneruje náhodně vybrané jídlo">Generuj jídlo</button>
+                    </div>
+
+                    <!-- TLAČÍTKO NA RESET SEZNAMU -->
+                    <div class="reset">
+                        <button type="button" class="button" id="reset" style="display: none" onclick="location.reload()" >Reset seznamu</button>
+                    </div>
+                </div>
+
+                <h2 id="nazev"></h2><!-- místo vypsání jídla -->
+        
+                <div class="obrazek">
+                    <p id="obrazek"></p> <!-- printne obrázek receptu -->
+                </div>
+        
+                <div class="recept" id="recept" style="display: none">
+                    <p id="ingredience"></p> <!-- místo vypsání ingrediencí -->
+                    <p id="postup"></p> <!-- místo vypsání receptu -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2022 <b>MarWen</b>
+        </footer>
+            
+        <script type="text/javascript" src="../js/script.js" defer></script>
+        <script type="text/javascript" src="../js/vecere.js" defer></script>  
+        
+            
+    </body>
+
+</html>
