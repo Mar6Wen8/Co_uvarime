@@ -422,22 +422,27 @@ table {
 } 
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: #333;
-    background-size: cover;
     color: white;
     padding: 15px 0;
     font-size: 15px; 
     cursor: default;
-
 }
 
+footer a {
+    color: #00BCD4;    
+    margin: 0 20px;
+}
 
+.fa {
+    font-size: 20px;
+}
 
-
-
-
-
+footer a:hover {
+    color: #af754c;
+}
 
 
 
