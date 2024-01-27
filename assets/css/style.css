@@ -95,22 +95,22 @@ h2 {
 
 /* tlačítko na kalorické tabulky  */
 .kal-tab {
-    background-image: url(./0pics/kal-tab.jpg);
+    background-image: url(../../0pics/kal-tab.jpg);
 }
 
 /* tlačítko na bazální metabolusmus  */
 .baz-met {
-    background-image: url(./0pics/biz-met.jpg);
+    background-image: url(../../0pics/biz-met.jpg);
 }    
 
 /* tlačítko na jídelníček  */
 .jidelnicek {
-    background-image: url(./0pics/jidelnicek.jpg);
+    background-image: url(../../0pics/jidelnicek.jpg);
 } 
 
 /* tlačítko na jídelníček  */
 .pastee {
-    background-image: url(./0pics/pastee.jpg);
+    background-image: url(../../0pics/pastee.jpg);
 } 
 
 /* Column container */
